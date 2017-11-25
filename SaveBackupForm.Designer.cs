@@ -55,7 +55,6 @@ namespace SaveBackup
             this.StartButton = new System.Windows.Forms.Button();
             this.BackupTimer = new System.Windows.Forms.Timer(this.components);
             this.StatusLabel = new System.Windows.Forms.Label();
-            this.DeleteBackups = new System.Windows.Forms.Button();
             this.About = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -286,26 +285,16 @@ namespace SaveBackup
             // 
             this.StatusLabel.AutoSize = true;
             this.StatusLabel.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.StatusLabel.Location = new System.Drawing.Point(12, 399);
+            this.StatusLabel.Location = new System.Drawing.Point(12, 361);
             this.StatusLabel.MaximumSize = new System.Drawing.Size(474, 0);
             this.StatusLabel.MinimumSize = new System.Drawing.Size(474, 0);
             this.StatusLabel.Name = "StatusLabel";
             this.StatusLabel.Size = new System.Drawing.Size(474, 13);
             this.StatusLabel.TabIndex = 10;
             // 
-            // DeleteBackups
-            // 
-            this.DeleteBackups.Location = new System.Drawing.Point(12, 364);
-            this.DeleteBackups.Name = "DeleteBackups";
-            this.DeleteBackups.Size = new System.Drawing.Size(474, 23);
-            this.DeleteBackups.TabIndex = 11;
-            this.DeleteBackups.Text = "Delete Backups";
-            this.DeleteBackups.UseVisualStyleBackColor = true;
-            this.DeleteBackups.Click += new System.EventHandler(this.DeleteBackups_Click);
-            // 
             // About
             // 
-            this.About.Location = new System.Drawing.Point(411, 433);
+            this.About.Location = new System.Drawing.Point(411, 377);
             this.About.Name = "About";
             this.About.Size = new System.Drawing.Size(75, 23);
             this.About.TabIndex = 12;
@@ -317,9 +306,8 @@ namespace SaveBackup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(497, 468);
+            this.ClientSize = new System.Drawing.Size(497, 412);
             this.Controls.Add(this.About);
-            this.Controls.Add(this.DeleteBackups);
             this.Controls.Add(this.StatusLabel);
             this.Controls.Add(this.StartButton);
             this.Controls.Add(this.groupBox3);
@@ -368,7 +356,6 @@ namespace SaveBackup
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NumericUpDown BackupInterval;
         private System.Windows.Forms.Label StatusLabel;
-        private System.Windows.Forms.Button DeleteBackups;
         private System.Windows.Forms.Button About;
     }
 }
